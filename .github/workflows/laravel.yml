@@ -31,15 +31,15 @@ jobs:
     needs: [tests]
     runs-on: ubuntu-latest
 
-    steps:
-      - name: "SSH to tokobaju backend deploy server"
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          script: |
-            cd /var/www/fashion.balok.id
-            git pull origin master
+    # steps:
+    #   - name: "SSH to tokobaju backend deploy server"
+    #     uses: appleboy/ssh-action@master
+    #     with:
+    #       host: ${{ secrets.HOST }}
+    #       username: ${{ secrets.USERNAME }}
+    #       password: ${{ secrets.PASSWORD }}
+    #       port: ${{ secrets.PORT }}
+    #       script: |
+    #         cd /var/www/fashion.balok.id
+    #         git pull origin master
 
