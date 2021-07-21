@@ -32,7 +32,7 @@
                     <th>Tipe</th>
                     <th>Harga</th>
                 </tr>
-               
+                
                
                     @foreach ($item->details as $detail)
 

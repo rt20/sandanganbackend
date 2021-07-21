@@ -62,7 +62,7 @@ class TransactionController extends Controller
             'item' => $item
         ]);
     }
-
+ 
     /**
      * Show the form for editing the specified resource.
      *

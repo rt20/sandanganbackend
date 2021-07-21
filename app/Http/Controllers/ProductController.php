@@ -90,7 +90,8 @@ class ProductController extends Controller
      */
     public function update(ProductRequest $request, $id)
     {
-        $data = $request->all();
+        $data = $request->all(); 
+        
         $data['slug'] = Str::slug($request->name);
 
         $item = Product::findOrFail($id);

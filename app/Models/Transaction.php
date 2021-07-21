@@ -14,7 +14,7 @@ class Transaction extends Model
     ];
     protected $hidden = [
 
-    ];
+    ]; 
 
     public function details()
     {
