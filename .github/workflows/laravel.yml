@@ -27,9 +27,9 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
 
-    deploy:
-    needs: [tests]
-    runs-on: ubuntu-latest
+    # deploy:
+    # needs: [tests]
+    # runs-on: ubuntu-latest
 
     # steps:
     #   - name: "SSH to tokobaju backend deploy server"
